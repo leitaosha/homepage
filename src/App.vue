@@ -26,9 +26,9 @@
         <component :is="store.mobileOpenState ? CloseSmall : HamburgerButton" />
       </Icon>
       <!-- 页脚 -->
-      <!-- <Transition name="fade" mode="out-in">
+      <Transition name="fade" mode="out-in">
         <Footer v-show="!store.backgroundShow && !store.setOpenState" />
-      </Transition> -->
+      </Transition>
     </main>
   </Transition>
 </template>
@@ -109,12 +109,16 @@ onMounted(() => {
   const styleContent = "color: rgb(30,152,255);";
   const title1 = "LeiTao's";
   const title2 = `
- _____ __  __  _______     ____     __
-|_   _|  \\/  |/ ____\\ \\   / /\\ \\   / /
-  | | | \\  / | (___  \\ \\_/ /  \\ \\_/ /
-  | | | |\\/| |\\___ \\  \\   /    \\   /
- _| |_| |  | |____) |  | |      | |
-|_____|_|  |_|_____/   |_|      |_|`;
+  
+  ░▒▓███████▓▒░▒▓█▓▒░   ░▒▓████████▓▒░ 
+░▒▓█▓▒░      ░▒▓█▓▒░      ░▒▓█▓▒░     
+░▒▓█▓▒░      ░▒▓█▓▒░      ░▒▓█▓▒░     
+ ░▒▓██████▓▒░░▒▓█▓▒░      ░▒▓█▓▒░     
+       ░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░     
+       ░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░     
+░▒▓███████▓▒░░▒▓████████▓▒░▒▓█▓▒░     
+                                      
+                                      `;
   const content = `\n\n版本: ${config.version}\n主页: ${config.home}\nGithub: ${config.github}`;
   console.info(`%c${title1} %c${title2} %c${content}`, styleTitle1, styleTitle2, styleContent);
 });

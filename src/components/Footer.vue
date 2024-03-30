@@ -13,9 +13,9 @@
         </span>
         <!-- 以下信息请不要修改哦 -->
         <span class="hidden">
-          &amp;&nbsp;Made&nbsp;by
-          <a :href="config.github" target="_blank">
-            {{ config.author }}
+          &amp;&nbsp;Thanks&nbsp;To&nbsp;The&nbsp;Theme&nbsp;Made&nbsp;By&nbsp;
+          <a :href="config.pregithub" target="_blank">
+            {{ config.preauthor }} 
           </a>
         </span>
         <!-- 站点备案 -->
